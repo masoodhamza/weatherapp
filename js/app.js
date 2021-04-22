@@ -18,6 +18,7 @@ cityForm.addEventListener("submit", (e) => {
   updateCity(city)
     .then((data) => updateUI(data))
     .catch((err) => {
+      alert("Something went wrong, please try later");
       console.log(err);
       throw new Error("Please enter the correct city name");
     });
@@ -40,7 +41,9 @@ const updateUI = (data) => {
           <!-- Weather details -->
           <div class="text-muted text-uppercase">
               <h4 class="my-1">${cityDetails.EnglishName}</h4>
-              <h5 class="my-1">(${cityDetails.AdministrativeArea.EnglishName})</h5>
+              <h5 class="my-1">(${
+                cityDetails.AdministrativeArea.EnglishName
+              })</h5>
               <h6>${cityDetails.Country.EnglishName}</h6>
               <div class="mt-3">${cityWeather.WeatherText}</div>
               <div class="display-4 my-2">
