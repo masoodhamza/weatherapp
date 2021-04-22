@@ -1,0 +1,9 @@
+body{
+    background: #ddd;
+}
+
+.icon{
+    position: relative;
+    margin-top: -50px;
+    border-radius: 50%;    
+}
