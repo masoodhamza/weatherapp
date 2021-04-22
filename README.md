@@ -2,7 +2,6 @@
 <h3>Be updated with current weather</h3>
 <hr>
 
-![app](https://user-images.githubusercontent.com/49762757/115147593-33773400-a075-11eb-8fdd-85924c12b230.gif)
 
 <a href="https://hamzaweatherapp.netlify.app/">Live demo</a>
 <hr>
