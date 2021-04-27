@@ -1,7 +1,9 @@
 <h1>Weather App</h1>
 <h3>Be updated with current weather</h3>
 <hr>
-![weather](https://user-images.githubusercontent.com/49762757/116293541-78efdb80-a7b0-11eb-8ed3-502b8d97687b.png)
+
+![weather](https://user-images.githubusercontent.com/49762757/116299445-2665ed80-a7b7-11eb-9072-7335aae19ce1.jpg)
+
 
 <a href="https://hamzaweatherapp.netlify.app/">Live demo</a>
 
