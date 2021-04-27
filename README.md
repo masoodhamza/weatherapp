@@ -1,7 +1,7 @@
 <h1>Weather App</h1>
 <h3>Be updated with current weather</h3>
 <hr>
-![weatherapp](https://user-images.githubusercontent.com/49762757/115910784-b1c54300-a486-11eb-8a4c-b7275e1751e7.png)
+![weather](https://user-images.githubusercontent.com/49762757/116293541-78efdb80-a7b0-11eb-8ed3-502b8d97687b.png)
 
 
 <a href="https://hamzaweatherapp.netlify.app/">Live demo</a>
@@ -25,6 +25,12 @@
     <li>Beautiful grphical icons to show weather</li>
     <li>Temperature selection</li>    
 </ul>
+
+<h2>How do i develope this app</h2>
+<ul>
+    <li>For this </li>
+</ul>
+
 
 <h2>Technologies</h2>
 <ul>
