@@ -1,5 +1,5 @@
 // api key
-apikey = "bFBVy0gRO7A35aTIiX7rEDrYaudYGQC3";
+apikey = "HxDfexKSAnCDjeINNFHUIFwzVG516vP4";
 
 // get city
 const getCity = async (city) => {
