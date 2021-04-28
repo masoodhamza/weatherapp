@@ -11,10 +11,6 @@ const getCity = async (city) => {
   return data[0];
 };
 
-// getCity("new york")
-//   .then(data => console.log(data))
-//   .catch(err => console.log(err));
-
 //get weather of the city
 const getWeather = async (locationKey) => {
   const baseUrl = "https://dataservice.accuweather.com/currentconditions/v1/";
@@ -23,10 +19,3 @@ const getWeather = async (locationKey) => {
   const data = await response.json();
   return data[0];
 };
-
-// getCity("new york")
-//   .then((data) => {
-//     return getWeather(data.Key);
-//   })
-//   .then(data => console.log(data))
-//   .catch(err => console.log(err));
