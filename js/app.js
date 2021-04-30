@@ -1,21 +1,5 @@
 const cityForm = document.querySelector("form");
 
-//get city name from form
-cityForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const city = cityForm.city.value.trim();
-  cityForm.reset();
-
-  updateCity(city)
-    .then((data) => updateUI(data))
-    .catch((err) => {
-      alert("Something went wrong, please try later");
-      console.log(err);
-      throw new Error("Please enter the correct city name");
-    });
-});
-
 //update city
 const updateCity = async (city) => {
   const cityDetails = await getCity(city);
@@ -23,6 +7,31 @@ const updateCity = async (city) => {
 
   return { cityDetails, cityWeather };
 };
+
+//loading city from localstorage
+if (localStorage.getItem("weathercity")) {
+  updateCity(localStorage.getItem("weathercity"))
+    .then((data) => updateUI(data))
+    .catch((err) => console.log(err));
+}
+
+//get city name from form
+cityForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const city = cityForm.city.value.trim();
+  cityForm.reset();
+
+  localStorage.setItem("weathercity", city);
+
+  updateCity(localStorage.getItem("weathercity"))
+    .then((data) => updateUI(data))
+    .catch((err) => {
+      alert("Something went wrong, please try later");
+      console.log(err);
+      throw new Error("Please enter the correct city name");
+    });
+});
 
 // UI update
 const card = document.querySelector(".card");
